@@ -9,7 +9,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
-          <NavLink className="navbar-brand" rel="noreferrer noopener" to="/">La collection</NavLink>
+          <NavLink className="navbar-brand" rel="noreferrer noopener" to="/">Ecommerce React</NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -19,28 +19,28 @@ export default function Navbar() {
                 <NavLink className="nav-link active" rel="noreferrer noopener" aria-current="page" to="/">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" rel="noreferrer noopener" to="/products">Products</NavLink>
+                <NavLink className="nav-link" rel="noreferrer noopener" to="/products">Produtos</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" rel="noreferrer noopener" to="/about">About</NavLink>
+                <NavLink className="nav-link" rel="noreferrer noopener" to="/about">Sobre</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" rel="noreferrer noopener" to="/contact">Contact</NavLink>
+                <NavLink className="nav-link" rel="noreferrer noopener" to="/contact">Contato</NavLink>
               </li>
             </ul>
             <div className="buttons">
               <button className="btn">
                 <NavLink to="/login" rel="noreferrer noopener" className="btn btn-outline-dark">
                   <i className="fa fa-sign-in me-1"></i>
-                  Login
+                  Logar
                 </NavLink>
                 <NavLink to="/register" rel="noreferrer noopener" className="btn btn-outline-dark ms-2">
                   <i className="fa fa-user-plus me-1"></i>
-                  Register
+                  Registrar
                 </NavLink>
                 <NavLink to="/cart" rel="noreferrer noopener" className="btn btn-outline-dark ms-2">
                   <i className="fa fa-cart-arrow-down me-1"></i>
-                  Cart ({state.length})
+                  ({state.length})
                 </NavLink>
               </button>
             </div>
