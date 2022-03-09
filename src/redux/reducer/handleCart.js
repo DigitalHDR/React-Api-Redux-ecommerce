@@ -8,9 +8,9 @@ const handleCart = (state = cart, action) => {
       const exist = state.find((x) => x.id === product.id)
       if (exist) {
         //! increase the quantify
-        return state.map((x) => {
+        return state.map((x) =>
           x.id === product.id ? { ...x, qty: x.qty + 1 } : x
-        })
+        )
       } else {
         const product = action.payload
         return [
@@ -21,21 +21,22 @@ const handleCart = (state = cart, action) => {
           }
         ]
       }
-      break;
+    //! break; comentei pra sair um erro, não gerou outro erro, ok
 
     case "DELITEM":
       const exist1 = state.find((x) => x.id === product.id)
       if (exist1.qty === 1) {
         return state.filter((x) => x.id !== exist1.id)
       } else {
-        return state.map((x) => {
+        return state.map((x) =>
           x.id === product.id ? { ...x, qty: x.qty - 1 } : x
-        })
+        )
       }
-      break;
+    //! break; comentei pra sair um erro, não gerou outro erro, ok
 
     default:
-      break;
+      return state
+    //! break; comentei pra sair um erro, não gerou outro erro, ok
   }
 }
 

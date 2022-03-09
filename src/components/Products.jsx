@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Skeleton from 'react-loading-skeleton'
 import { NavLink } from 'react-router-dom'
 
 export default function Products() {
@@ -24,26 +23,12 @@ export default function Products() {
       }
     }
     getProducts()
-  }, [])
+  }, []) //! esta gerando um erro nessa linha
 
   const Loading = () => {
     return (
       <>
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
+        Loading...
       </>
     )
   }
