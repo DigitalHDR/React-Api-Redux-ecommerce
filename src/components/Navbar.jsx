@@ -35,7 +35,7 @@ export default function Navbar() {
                   Login
                 </NavLink>
                 <NavLink to="/register" rel="noreferrer noopener" className="btn btn-outline-dark ms-2">
-                  <i className="fa fa-user-plus"></i>
+                  <i className="fa fa-user-plus me-1"></i>
                   Register
                 </NavLink>
                 <NavLink to="/cart" rel="noreferrer noopener" className="btn btn-outline-dark ms-2">

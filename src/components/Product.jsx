@@ -55,8 +55,8 @@ export default function Product() {
           <button
             className='btn btn-outline-dark'
             onClick={() => addProduct(product)}
-          >Add to Cart</button>
-          <NavLink to="/cart" className='btn btn-dark mx-2'>Go to Cart</NavLink>
+          >Adicionar ao carrinho</button>
+          <NavLink to="/cart" className='btn btn-dark mx-2'>Carrinho</NavLink>
         </div>
       </>
 
