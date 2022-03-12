@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { NavLink } from 'react-router-dom'
-import { delCart } from '../redux/action/index'
+import { delCart } from '../redux/action'  //################################### caso de erro no caminho coloque '../redux/action/index'
 
 export default function Cart() {
   const state = useSelector((state) => state.handleCart)
